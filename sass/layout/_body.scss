@@ -1,0 +1,28 @@
+
+:root {
+    --body : white;
+}
+
+:root:has(body.night) {
+    --body : black;
+}
+
+body {
+    padding: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    span {
+        padding-inline-end: 0.2rem;
+        border-right: 1px solid black;
+
+        animation: lamb 1s infinite;
+
+        @keyframes lamb {
+            50% {
+                border-right: transparent;
+
+            }
+        }
+    }
+}
+
